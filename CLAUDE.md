@@ -100,10 +100,10 @@ This site deploys automatically via GitHub Pages:
 - Site configuration in `_config.yml` is used throughout templates via `site.*` variables
 
 ### Liquid Templating Patterns
-- `{{ site.title }}` - Site-wide configuration
-- `{{ page.title }}` - Current page/post data
-- `{% for post in site.posts %}` - Iterate through all posts
-- `{{ post.url | relative_url }}` - Generate proper URLs with baseurl support
+- Site-wide configuration: site.title
+- Current page/post data: page.title
+- Iterate through all posts: for post in site.posts loop
+- Generate proper URLs with baseurl support: post.url with relative_url filter
 
 ### Styling Approach
 - Single monolithic CSS file (no CSS preprocessor or build step)
