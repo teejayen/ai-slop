@@ -1,0 +1,27 @@
+# Site settings
+title: AI Insights Blog
+description: A blog exploring artificial intelligence, machine learning, and the future of technology
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+permalink: /:year/:month/:day/:title/
+
+# Author
+author:
+  name: AI Enthusiast
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - README.md
