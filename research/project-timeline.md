@@ -1,9 +1,9 @@
 # Project Timeline - AI Business Research
 
-**Project:** ai-slop (AI Business Research)
-**Research Lead:** Tim Neilen
-**AI Assistant:** Claude (Anthropic) via Claude Code
-**Location:** Brisbane, Australia
+**Project:** ai-slop (AI Business Research)<br>
+**Research Lead:** Tim Neilen<br>
+**AI Assistant:** Claude (Anthropic) via Claude Code<br>
+**Location:** Sydney, Australia
 
 ---
 
@@ -19,8 +19,8 @@ This document captures the development timeline and key conversations that shape
 
 ### Session Overview
 
-**Duration:** Single extended Claude Code session
-**Participants:** Tim Neilen (Research Lead) and Claude (Anthropic)
+**Duration:** Single extended Claude Code session<br>
+**Participants:** Tim Neilen (Research Lead) and Claude (Anthropic)<br>
 **Objective:** Build multi-agent workflow for generating and analyzing AI business articles
 
 ---
@@ -32,6 +32,7 @@ This document captures the development timeline and key conversations that shape
 > "Within the social-assistant repo we previously built out a multi-agent / sub-agent workflow for LinkedIn posts. The intention of this repo is to perform RESEARCH ONLY of AI generated articles for publishing on GitHub pages. I am interested to write these posts with a "business" focus to them. Read through the README.md to get an idea for how this should all work. Ideally I want to just run a command to create articles and then have everything done agentically. It's also important to ensure that articles are written in Australian English."
 
 **Key Requirements Identified:**
+
 1. Adapt social-assistant multi-agent architecture
 2. Research focus (not content marketing)
 3. Business-focused AI articles
@@ -69,6 +70,7 @@ Claude conducted parallel research:
 ### Key Findings from social-assistant
 
 **Architecture Pattern:**
+
 ```
 Orchestrator (/linkedin-post)
     |
@@ -84,6 +86,7 @@ Consolidation -> Output
 ```
 
 **2025 Best Practices Discovered:**
+
 - Parallel execution saves ~75% time vs sequential
 - Specialized agents with focused roles
 - Sonnet 4.5 orchestrator + Haiku 4.5 workers pattern
@@ -93,6 +96,7 @@ Consolidation -> Output
 ### Architecture Adapted for ai-slop
 
 **Orchestrator:** `/generate-article`
+
 - Research AI business trends (WebSearch)
 - Generate business-focused draft
 - Launch 3 parallel review agents
@@ -100,6 +104,7 @@ Consolidation -> Output
 - Save to `_posts/` in Jekyll format
 
 **Review Agents (Parallel):**
+
 1. `/review-business` - Business focus validation (/10)
 2. `/review-quality` - Australian English, formatting (/10)
 3. `/review-substance` - Slop detection (/10)
@@ -113,32 +118,38 @@ Consolidation -> Output
 ### Files Created
 
 **Slash Commands:**
+
 - `.claude/commands/generate-article.md` - Main orchestrator (updated from existing)
 - `.claude/commands/review-business.md` - NEW
 - `.claude/commands/review-quality.md` - NEW
 - `.claude/commands/review-substance.md` - NEW
 
 **Documentation:**
+
 - `research/blog-post-guidelines.md` - Complete quality standards
 
 **Updates:**
+
 - `README.md` - Added multi-agent workflow documentation
 - `.gitignore` - Existing (social-assistant files deliberately NOT pushed)
 
 ### Key Design Decisions
 
 **Why 3 agents instead of 4?**
+
 - Business focus (not personal voice)
 - Quality standards (includes Australian English)
 - Substance check (the "slop detector")
 - Voice/context agents from social-assistant not needed (no personal authenticity requirement)
 
 **Why /30 scoring?**
+
 - Simpler than /40
 - Clear threshold: 24+ is production-ready (80%)
 - Each dimension equally weighted
 
 **Files-first approach:**
+
 - Save articles to `_posts/YYYY-MM-DD-slug.md`
 - Save reviews to `research/YYYY-MM-DD-slug-review.md`
 - Builds searchable corpus
@@ -157,6 +168,7 @@ After completing technical implementation, Tim requested something unexpected:
 **Claude's initial interpretation:** Update colors and branding
 
 **Claude proceeded to:**
+
 - Design slate + amber theme (moving away from generic purple)
 - Update CSS variables
 - Add "AI Generated" badges
@@ -182,25 +194,28 @@ Not just branding - **create an actual identity.**
 
 Claude conducted three targeted searches:
 
-**1. Australian tech critical commentary writers skeptical AI hype**
+#### 1. Australian tech critical commentary writers skeptical AI hype
 
 **Findings:**
+
 - Australian authors (Dervla McTiernan, Richard Flanagan, John Marsden) highly critical of AI training on their work
 - General Australian workforce skepticism toward generative AI hype
 - Cultural tendency toward pragmatism over evangelism
 
-**2. Business analyst persona characteristics critical thinking**
+#### 2. Business analyst persona characteristics critical thinking
 
 **Findings:**
+
 - Analysts are focused, strategic, analytical yet creative
 - Critical thinking is core skill: challenging assumptions, evidence-based reasoning
 - Forward-thinking: planning 3-4 steps ahead
 - Strong communication skills across stakeholder levels
 - Problem-solving with creativity + analytical rigor
 
-**3. Sydney Australia tech culture startup ecosystem**
+#### 3. Sydney Australia tech culture startup ecosystem
 
 **Findings:**
+
 - Sydney is leading tech hub in Southern Hemisphere
 - Tech Central precinct: 6 sq km with highest VC density in Australia
 - 3,000+ tech startups in NSW
@@ -217,17 +232,20 @@ Claude conducted three targeted searches:
 Based on research, Claude created:
 
 **Name:** Morgan Ashby
+
 - Gender-neutral (they/them)
 - Australian-appropriate naming
 - Professional but approachable
 
 **Background:**
+
 - Age 34 (career timeline aligns with 2020-2025 AI boom)
 - Location: Ultimo, Sydney (walking distance to Tech Central)
 - Former business analyst (5 years at Tech Central startups)
 - Education: BCom (USYD), Grad Dip Data Analytics (UTS)
 
 **Origin Story:**
+
 2020-2025: Evaluated dozens of AI pilots as business analyst. Noticed ~75% failed ROI not from tech failure, but from hype-based business cases. Observed profound *sameness* in all AI business content - same phrases, same structure, possibly same AI models.
 
 Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated content is generic, can we quantify why?
@@ -235,6 +253,7 @@ Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated conte
 **Result:** This research project.
 
 **Interests:**
+
 - Critical tech commentary (Ben Thompson, Casey Newton, Kara Swisher)
 - Australian tech skepticism
 - Systems thinking
@@ -243,6 +262,7 @@ Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated conte
 - Blue Mountains hiking (weekend mental clarity)
 
 **Perspective:**
+
 - Skeptical but not cynical
 - AI has value (seen it work) but 80% of AI business content is slop
 - Evidence-based: cite sources, show data
@@ -250,6 +270,7 @@ Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated conte
 - Direct Australian communication style
 
 **Voice:**
+
 - Australian English always
 - Direct, no corporate waffle
 - Evidence-based
@@ -269,6 +290,7 @@ Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated conte
 > "Write it into a Markdown file as well, update the README.md if you have to. Include the prompts from this discussion that got us up to this point so far. Remember, this is a research project - so it's important to capture the timeline and context that got us to this point. I (Tim Neilen) will no doubt reference this in future."
 
 **Key instruction:** Document the research process itself, including:
+
 - Timeline of development
 - Key prompts and responses
 - Decision points
@@ -279,7 +301,7 @@ Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated conte
 
 - `research/persona-morgan-ashby.md` - Complete persona documentation
 - `research/project-timeline.md` - This document
-- README updates (pending)
+- README updates (completed)
 
 ---
 
@@ -312,51 +334,51 @@ Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated conte
 
 ---
 
-## Next Steps (As of 7 November 2025, 15:30)
+## Articles Generated (As of November 2025)
 
-### Immediate
+### Published Articles
 
-1.  Document persona (Morgan Ashby)
-2.  Document timeline (this file)
-3. -> Update README.md with persona introduction
-4. -> Generate first test article using Morgan's voice
-5. -> Test full multi-agent workflow end-to-end
+1. **The Agentic AI Shift: Why 192% ROI Claims Might Actually Be Real**
+   - Date: 2025-11-07
+   - Score: 26/30 (Business: 8/10, Quality: 9/10, Substance: 9/10)
+   - Topic: Critical examination of agentic AI ROI claims
 
-### Short-term
+2. **The AI Scaling Crisis: When 88% of Pilots Fail**
+   - Date: 2025-11-07
+   - Score: 25/30 (Business: 8/10, Quality: 8/10, Substance: 9/10)
+   - Topic: Enterprise AI scaling challenges and failure patterns
 
-- Build article corpus (aim for 5-10 articles)
-- Analyze patterns in review scores
-- Document "slop" characteristics identified
-- Refine agent prompts based on results
+3. **AI Writing Patterns: The Em Dash Epidemic**
+   - Date: 2025-11-07
+   - Score: 24/30 (Business: 7/10, Quality: 8/10, Substance: 9/10)
+   - Topic: Meta-analysis of AI writing patterns and tells
 
-### Medium-term
+4. **The AI Governance Gap in Australian Companies**
+   - Date: 2025-11-08
+   - Score: 27/30 (Business: 9/10, Quality: 9/10, Substance: 9/10)
+   - Topic: Australian regulatory landscape and ASX300 director responsibilities
 
-- Monthly persona calibration
-- Pattern analysis across corpus
-- Research findings documentation
-- Potential academic paper or blog post about methodology
+5. **The $375 Billion Infrastructure Gamble**
+   - Date: 2025-11-07
+   - Score: 27/30 (Business: 8/10, Quality: 9/10, Substance: 7/10)
+   - Topic: AI infrastructure spending vs. ROI reality
 
----
+### Patterns Observed
 
-## Conversations & Prompts Archive
+**What Works:**
 
-### Opening Exchange
+- Specific financial data and statistics
+- Australian regulatory context (AICD, ASX, government guidance)
+- Critical examination of failures (95% pilot failure rate)
+- Named sources and hyperlinked citations
+- Organisational challenges alongside technical discussion
 
-**Tim:** "Within the C:\Users\TimNeilen\git\social-assistant repo we previously built out a multi-agent / sub-agent workflow for LinkedIn posts..."
+**What Doesn't Work:**
 
-**Claude:** [Reads social-assistant architecture, conducts research, proposes adapted workflow]
-
-### Critical Redirect
-
-**Tim:** "By 'personify' I mean create your own persona.. give yourself a name, a persona, interests specific to you... I really want you to explore this, and consider your choice properly. This is an important task."
-
-**Claude:** [Conducts persona research, creates Morgan Ashby]
-
-### Approval & Documentation Request
-
-**Tim:** "Yes - that's great. Write it into a Markdown file as well, update the README.md if you have to. Include the prompts from this discussion..."
-
-**Claude:** [Creates these documentation files]
+- Vague claims without attribution
+- Generic strategic language
+- American English violations
+- Uncritical cheerleading of AI capabilities
 
 ---
 
@@ -366,50 +388,54 @@ Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated conte
 
 ```
 .
-   _config.yml              # Jekyll config (updated with research context)
-   _layouts/
-      default.html         # Updated with footer persona info
-      post.html            # AI badge and research notice
-   _posts/                  # Generated articles (empty, ready for first article)
-   .claude/
-      commands/
-          generate-article.md       # Orchestrator
-          review-business.md        # Business focus agent
-          review-quality.md         # Quality standards agent
-          review-substance.md       # Slop detection agent
-   assets/css/
-      style.css            # Slate + amber theme
-   research/
-      blog-post-guidelines.md       # Quality standards
-      persona-morgan-ashby.md       # Persona documentation
-      project-timeline.md           # This file
-   index.html               # Homepage (updated with research mission)
-   CLAUDE.md                # Instructions for Claude Code
-   README.md                # Project overview (needs persona update)
+├── _config.yml              # Jekyll config (updated with research context)
+├── _layouts/
+│   ├── default.html         # Base layout with navigation
+│   └── post.html            # AI badge and research notice
+├── _posts/                  # Generated articles (5 published)
+├── .claude/
+│   └── commands/
+│       ├── generate-article.md       # Orchestrator
+│       ├── review-business.md        # Business focus agent
+│       ├── review-quality.md         # Quality standards agent
+│       └── review-substance.md       # Slop detection agent
+├── assets/css/
+│   └── style.css            # Teal + charcoal theme
+├── research/
+│   ├── blog-post-guidelines.md       # Quality standards
+│   ├── persona-morgan-ashby.md       # Persona documentation
+│   ├── project-timeline.md           # This file
+│   └── [article-review files]        # Review documentation
+├── about.md                 # Project overview page
+├── author.md                # Morgan Ashby persona page
+├── research-docs.md         # Research documentation index
+├── index.html               # Homepage
+├── CLAUDE.md                # Instructions for Claude Code
+└── README.md                # Project overview
 ```
 
 ### Multi-Agent Workflow
 
 ```
 /generate-article command
-    ->
+    ↓
 [1] Research phase (WebSearch)
-    ->
+    ↓
 [2] Draft generation (800-1200 words, business focus)
-    ->
+    ↓
 [3] Parallel review agents (Task tool):
-      /review-business    -> Score /10
-      /review-quality     -> Score /10
-      /review-substance   -> Score /10
-    ->
+      /review-business    → Score /10
+      /review-quality     → Score /10
+      /review-substance   → Score /10
+    ↓
 [4] Consolidate feedback
-    ->
+    ↓
 [5] Apply fixes (Australian English, substance, business angle)
-    ->
+    ↓
 [6] Save files:
-      _posts/YYYY-MM-DD-slug.md
-      research/YYYY-MM-DD-slug-review.md
-    ->
+      _posts/YYYY-MM-DD-slug.md
+      research/YYYY-MM-DD-slug-review.md
+    ↓
 [7] Present to user (Overall score /30)
 ```
 
@@ -418,18 +444,21 @@ Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated conte
 ## Acknowledgments
 
 **Research Lead:** Tim Neilen
+
 - Provided social-assistant architecture as foundation
 - Set Australian English requirements
 - Challenged Claude to develop authentic persona
 - Emphasized research methodology and documentation
 
 **Claude (Anthropic):**
+
 - Adapted multi-agent architecture
 - Conducted persona research
 - Created Morgan Ashby identity
 - Implemented technical workflow
 
 **Influences:**
+
 - Social-assistant repo (parallel agent pattern)
 - Sydney tech ecosystem (geographical grounding)
 - Australian business culture (pragmatic skepticism)
@@ -437,7 +466,7 @@ Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated conte
 
 ---
 
-**Document Created:** 7 November 2025
-**Last Updated:** 7 November 2025
-**Status:** Active research project
-**Next Milestone:** First article generation
+**Document Created:** 7 November 2025<br>
+**Last Updated:** November 2025<br>
+**Status:** Active research project<br>
+**Current Corpus:** 5 articles (all 24+ quality threshold)
