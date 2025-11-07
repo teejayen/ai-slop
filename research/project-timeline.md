@@ -318,9 +318,9 @@ Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated conte
 
 1.  Document persona (Morgan Ashby)
 2.  Document timeline (this file)
-3. � Update README.md with persona introduction
-4. � Generate first test article using Morgan's voice
-5. � Test full multi-agent workflow end-to-end
+3. -> Update README.md with persona introduction
+4. -> Generate first test article using Morgan's voice
+5. -> Test full multi-agent workflow end-to-end
 
 ### Short-term
 
@@ -392,24 +392,24 @@ Mid-2025 insight: **Use AI to study AI content patterns.** If AI-generated conte
 
 ```
 /generate-article command
-    �
+    ->
 [1] Research phase (WebSearch)
-    �
+    ->
 [2] Draft generation (800-1200 words, business focus)
-    �
+    ->
 [3] Parallel review agents (Task tool):
-      /review-business    � Score /10
-      /review-quality     � Score /10
-      /review-substance   � Score /10
-    �
+      /review-business    -> Score /10
+      /review-quality     -> Score /10
+      /review-substance   -> Score /10
+    ->
 [4] Consolidate feedback
-    �
+    ->
 [5] Apply fixes (Australian English, substance, business angle)
-    �
+    ->
 [6] Save files:
       _posts/YYYY-MM-DD-slug.md
       research/YYYY-MM-DD-slug-review.md
-    �
+    ->
 [7] Present to user (Overall score /30)
 ```
 
