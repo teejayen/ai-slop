@@ -36,6 +36,7 @@ Each article receives three parallel reviews (Business Focus /10, Quality Standa
 
 | Article | Date | Overall | Business | Quality | Substance | Review |
 |---------|------|---------|----------|---------|-----------|--------|
+| [The AI Talent Premium: 67% Salary Gap]({{ '/posts/2025/11/07/ai-talent-premium-67-percent-salary-gap/' | relative_url }}) | 2025-11-07 | **28/30** | 9/10 | 10/10 | 9/10 | [Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-07-ai-talent-premium-67-percent-salary-gap-review.md) |
 | [The AI Build Trap: 67% Vendor Success]({{ '/posts/2025/11/07/build-vs-buy-67-percent-vendor-success/' | relative_url }}) | 2025-11-07 | **28/30** | 10/10 | 9/10 | 9/10 | [Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-07-build-vs-buy-67-percent-vendor-success-review.md) |
 | [The $375B Infrastructure Gamble]({{ '/posts/2025/11/07/infrastructure-gamble-375-billion/' | relative_url }}) | 2025-11-07 | **27/30** | 8/10 | 9/10 | 7/10 | [Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-07-infrastructure-gamble-375-billion-review.md) |
 | [AI Governance Gap (Australia)]({{ '/posts/2025/11/08/ai-governance-gap-australian-companies/' | relative_url }}) | 2025-11-08 | **27/30** | 9/10 | 9/10 | 9/10 | [Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-08-ai-governance-gap-review.md) |
