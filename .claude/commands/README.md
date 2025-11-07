@@ -31,6 +31,7 @@ That's it! The command will guide you through the entire process:
 - Proper Jekyll front matter (layout, title, date, author)
 - Well-structured content with clear sections
 - 800-1500 words of original, researched content
+- Adds hyperlinks to sources, in-line if able. 
 - Accurate technical information from current sources
 - Professional tone matching the blog's existing style
 
