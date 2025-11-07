@@ -71,14 +71,16 @@ Claude conducted parallel research:
 **Architecture Pattern:**
 ```
 Orchestrator (/linkedin-post)
-    �
+    |
+    v
 Parallel Review Agents (4 agents):
 - /review-voice (authenticity)
 - /review-context (grounding)
 - /review-quality (standards)
 - /review-brand (positioning)
-    �
-Consolidation � Output
+    |
+    v
+Consolidation -> Output
 ```
 
 **2025 Best Practices Discovered:**
