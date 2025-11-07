@@ -1,8 +1,8 @@
 # Site settings
 title: AI Insights Blog
 description: A blog exploring artificial intelligence, machine learning, and the future of technology
-baseurl: ""
-url: ""
+baseurl: "/ai-slop"
+url: "https://hudson-thomas.github.io"
 
 # Build settings
 markdown: kramdown

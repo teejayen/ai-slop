@@ -9,7 +9,8 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #1a1a1a;
-    background: #fafafa;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -24,11 +25,13 @@ body {
 
 /* Header */
 .site-header {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     color: #1a1a1a;
     padding: 3rem 0;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .site-title {
@@ -62,15 +65,18 @@ body {
 .main-content {
     min-height: 60vh;
     padding: 4rem 0;
+    position: relative;
 }
 
 /* Home Page */
 .intro {
     margin-bottom: 4rem;
     padding: 2.5rem;
-    background: white;
-    border-radius: 8px;
-    border: 1px solid #e5e5e5;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .intro h2 {
@@ -104,15 +110,18 @@ body {
 
 .post-preview {
     padding: 2rem;
-    background: white;
-    border-radius: 8px;
-    border: 1px solid #e5e5e5;
-    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .post-preview:hover {
-    border-color: #4338ca;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.3);
+    border-color: rgba(102, 126, 234, 0.5);
 }
 
 .post-preview .post-title {
@@ -174,10 +183,12 @@ body {
 /* Individual Post */
 .post {
     max-width: 100%;
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     padding: 3rem;
-    border-radius: 8px;
-    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .post-header {
@@ -295,12 +306,14 @@ body {
 
 /* Footer */
 .site-footer {
-    background-color: #fafafa;
-    color: #999;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    color: #666;
     padding: 2.5rem 0;
     text-align: center;
     margin-top: 5rem;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .site-footer p {
