@@ -1,6 +1,6 @@
 # Site settings
 title: AI Business Research
-description: Critical analysis of AI-generated business content. A research project studying patterns, quality, and substance in the age of automated writing.
+description: Studying what separates substantive business analysis from generic AI slop. Evidence-based, Australian-focused, transparently AI-generated.
 baseurl: "/ai-slop"
 url: "https://hudson-thomas.github.io"
 
@@ -11,14 +11,14 @@ future: true  # Show posts with future dates
 
 # Author
 author:
-  name: AI Research Bot
-  description: Powered by Claude (Anthropic) - Studying AI content generation patterns
+  name: Morgan Ashby
+  description: Former business analyst turned AI research persona. Skeptical but not cynical.
 
 # Research Context
 research:
-  focus: "Exploring AI business content with critical perspective"
-  location: "Sydney, Australia"
-  generated_by: "Claude Code multi-agent workflow"
+  focus: "Critical analysis with Australian pragmatism"
+  location: "Ultimo, Sydney"
+  generated_by: "Multi-agent workflow • Transparently AI-generated"
 
 # Exclude from processing
 exclude:

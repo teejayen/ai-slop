@@ -6,24 +6,31 @@
 }
 
 :root {
-    /* Modern, warm color palette for Morgan's research blog */
+    /* Morgan's Brand Identity - Australian business publication aesthetic */
+    /* Primary Palette */
     --charcoal: #2d3436;
-    --warm-grey: #636e72;
-    --light-grey: #b2bec3;
+    --warm-white: #fdfbf7;
+    --near-black: #1a1a1a;
+
+    /* Accent - Burnt Sienna (Australian sandstone) */
+    --burnt-sienna: #c56a37;
+    --burnt-sienna-dark: #a85628;
+
+    /* Supporting Colors */
+    --warm-gray: #7d7263;
+    --light-sandstone: #f5ebe0;
+    --dark-slate: #3d3d3d;
+
+    /* Legacy aliases for backwards compatibility */
     --cream: #fdfbf7;
-    --off-white: #f8f6f3;
-    --teal: #00b894;
-    --teal-dark: #00a383;
-    --coral: #fd79a8;
-    --coral-light: #ff9eb8;
-    --blue-mountains: #74b9ff;
+    --off-white: #f5ebe0;
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.65;
-    color: var(--charcoal);
-    background: var(--cream);
+    line-height: 1.7;
+    color: var(--near-black);
+    background: var(--warm-white);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -41,7 +48,7 @@ body {
     background: white;
     color: var(--charcoal);
     padding: 2.5rem 0;
-    border-bottom: 3px solid var(--teal);
+    border-bottom: 3px solid var(--burnt-sienna);
     position: relative;
 }
 
@@ -61,12 +68,12 @@ body {
 }
 
 .site-title a:hover {
-    color: var(--teal);
+    color: var(--burnt-sienna);
 }
 
 .site-description {
     font-size: 0.95rem;
-    color: var(--warm-grey);
+    color: var(--warm-gray);
     font-weight: 400;
     position: relative;
     max-width: 650px;
@@ -84,7 +91,7 @@ body {
 }
 
 .site-nav a {
-    color: var(--warm-grey);
+    color: var(--warm-gray);
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
@@ -93,7 +100,7 @@ body {
 }
 
 .site-nav a:hover {
-    color: var(--teal);
+    color: var(--burnt-sienna);
 }
 
 .site-nav a::after {
@@ -103,7 +110,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--teal);
+    background: var(--burnt-sienna);
     transition: width 0.2s ease;
 }
 
@@ -124,7 +131,7 @@ body {
     padding: 2rem;
     background: white;
     border-radius: 8px;
-    border-left: 4px solid var(--teal);
+    border-left: 4px solid var(--burnt-sienna);
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
@@ -138,7 +145,7 @@ body {
 
 .intro p {
     font-size: 1rem;
-    color: var(--warm-grey);
+    color: var(--warm-gray);
     line-height: 1.65;
     margin-bottom: 0.75rem;
 }
@@ -173,8 +180,8 @@ body {
 
 .post-preview:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 184, 148, 0.12);
-    border-left-color: var(--teal);
+    box-shadow: 0 8px 24px rgba(197, 106, 55, 0.12);
+    border-left-color: var(--burnt-sienna);
 }
 
 .post-preview .post-title {
@@ -192,7 +199,7 @@ body {
 }
 
 .post-preview .post-title a:hover {
-    color: var(--teal);
+    color: var(--burnt-sienna);
 }
 
 .post-meta {
@@ -220,7 +227,7 @@ body {
 }
 
 .read-more {
-    color: var(--teal);
+    color: var(--burnt-sienna);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.2s ease;
@@ -231,7 +238,7 @@ body {
 }
 
 .read-more:hover {
-    color: var(--teal-dark);
+    color: var(--burnt-sienna-dark);
     gap: 0.75rem;
 }
 
@@ -301,7 +308,7 @@ body {
 
 .post-content code {
     background-color: var(--off-white);
-    color: var(--teal-dark);
+    color: var(--burnt-sienna-dark);
     padding: 0.2rem 0.4rem;
     border-radius: 3px;
     font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Roboto Mono', monospace;
@@ -327,10 +334,10 @@ body {
 }
 
 .post-content blockquote {
-    border-left: 4px solid var(--teal);
+    border-left: 4px solid var(--burnt-sienna);
     padding-left: 1.5rem;
     margin: 2rem 0;
-    color: var(--warm-grey);
+    color: var(--warm-gray);
     font-style: italic;
     background: var(--off-white);
     padding: 1.25rem 1.5rem;
@@ -344,7 +351,7 @@ body {
 }
 
 .back-link {
-    color: var(--teal);
+    color: var(--burnt-sienna);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.2s ease;
@@ -355,14 +362,14 @@ body {
 }
 
 .back-link:hover {
-    color: var(--teal-dark);
+    color: var(--burnt-sienna-dark);
     gap: 0.75rem;
 }
 
 /* Footer */
 .site-footer {
     background: white;
-    color: var(--warm-grey);
+    color: var(--warm-gray);
     padding: 2rem 0;
     text-align: center;
     margin-top: 4rem;
@@ -399,27 +406,27 @@ body {
 /* Links */
 .post-content a,
 .page-content a {
-    color: var(--teal);
+    color: var(--burnt-sienna);
     text-decoration: none;
-    border-bottom: 2px solid rgba(0, 184, 148, 0.3);
+    border-bottom: 2px solid rgba(197, 106, 55, 0.3);
     transition: all 0.2s ease;
 }
 
 .post-content a:hover,
 .page-content a:hover {
-    color: var(--teal-dark);
-    border-bottom-color: var(--teal);
+    color: var(--burnt-sienna-dark);
+    border-bottom-color: var(--burnt-sienna);
 }
 
 /* Research Project Notice */
 .research-notice {
-    background: rgba(0, 184, 148, 0.05);
-    border-left: 4px solid var(--teal);
+    background: rgba(197, 106, 55, 0.05);
+    border-left: 4px solid var(--burnt-sienna);
     padding: 1.5rem;
     margin: 2rem 0;
     border-radius: 0 4px 4px 0;
     font-size: 0.9rem;
-    color: var(--warm-grey);
+    color: var(--warm-gray);
 }
 
 .research-notice strong {
@@ -443,7 +450,7 @@ body {
     line-height: 1.2;
     font-weight: 700;
     letter-spacing: -1px;
-    border-bottom: 3px solid var(--teal);
+    border-bottom: 3px solid var(--burnt-sienna);
     padding-bottom: 1rem;
 }
 
@@ -488,8 +495,8 @@ body {
 }
 
 .intro-box {
-    background: rgba(0, 184, 148, 0.05);
-    border-left: 4px solid var(--teal);
+    background: rgba(197, 106, 55, 0.05);
+    border-left: 4px solid var(--burnt-sienna);
     padding: 2rem;
     margin-bottom: 2rem;
     border-radius: 0 8px 8px 0;
@@ -513,7 +520,7 @@ body {
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 1px solid #e5e5e5;
-    color: var(--warm-grey);
+    color: var(--warm-gray);
     font-size: 0.9rem;
 }
 
@@ -536,7 +543,7 @@ body {
 }
 
 .article-table th {
-    background: var(--teal);
+    background: var(--burnt-sienna);
     color: white;
     font-weight: 600;
     text-align: left;
@@ -555,11 +562,11 @@ body {
 }
 
 .article-table tr:hover {
-    background: rgba(0, 184, 148, 0.03);
+    background: rgba(197, 106, 55, 0.03);
 }
 
 .article-table a {
-    border-bottom: 1px solid rgba(0, 184, 148, 0.3);
+    border-bottom: 1px solid rgba(197, 106, 55, 0.3);
 }
 
 /* Scoring Section */
@@ -571,7 +578,7 @@ body {
 }
 
 .scoring-section h3 {
-    color: var(--teal-dark);
+    color: var(--burnt-sienna-dark);
     margin-top: 2rem;
 }
 
