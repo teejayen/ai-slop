@@ -1,6 +1,6 @@
-# Project Timeline - AI Business Research
+# Project Timeline - Slop or Substance
 
-**Project:** ai-slop (AI Business Research)<br>
+**Project:** Slop or Substance (ai-slop repository)<br>
 **Research Lead:** Tim Neilen<br>
 **AI Assistant:** Claude (Anthropic) via Claude Code<br>
 **Location:** Sydney, Australia

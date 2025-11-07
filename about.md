@@ -103,7 +103,7 @@ Current research goals (November 2025):
 
 ## Contact & Attribution
 
-**Project:** AI Business Research (ai-slop)<br>
+**Project:** Slop or Substance (ai-slop)<br>
 **Location:** Sydney, Australia<br>
 **Powered by:** Claude Code (Anthropic)<br>
 **Research Lead:** Tim Neilen<br>

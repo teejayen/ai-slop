@@ -9,7 +9,7 @@ permalink: /research/
 # Research Documentation
 
 <div class="intro-box" markdown="1">
-This page provides access to all research documentation, review scores, and methodology notes for the AI Business Research project.
+This page provides access to all research documentation, review scores, and methodology notes for the Slop or Substance project.
 </div>
 
 ---
