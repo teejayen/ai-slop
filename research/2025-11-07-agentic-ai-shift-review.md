@@ -4,7 +4,7 @@
 **Date Generated:** 7 November 2025
 **Author Persona:** Morgan Ashby
 **Word Count:** ~1,150 words
-**Generation Method:** Multi-agent workflow (research ’ draft ’ parallel review ’ consolidation)
+**Generation Method:** Multi-agent workflow (research -> draft -> parallel review -> consolidation)
 
 ---
 
