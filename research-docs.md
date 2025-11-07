@@ -4,9 +4,15 @@ title: Research Documentation
 permalink: /research/
 ---
 
+<div class="page-content">
+
 # Research Documentation
 
+<div class="intro-box">
 This page provides access to all research documentation, review scores, and methodology notes for the AI Business Research project.
+</div>
+
+---
 
 ## Overview
 
@@ -26,15 +32,23 @@ Each article receives three parallel reviews (Business Focus /10, Quality Standa
 
 ### Published Articles
 
-| Article | Date | Overall Score | Business | Quality | Substance | Review Doc |
-|---------|------|---------------|----------|---------|-----------|------------|
-| [The $375 Billion Infrastructure Gamble](/posts/2025/11/07/infrastructure-gamble-375-billion/) | 2025-11-07 | 27/30 | 8/10 | 9/10 | 7/10 | [View Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-07-infrastructure-gamble-375-billion-review.md) |
-| [AI Governance Gap in Australian Companies](/posts/2025/11/08/ai-governance-gap-australian-companies/) | 2025-11-08 | 27/30 | 9/10 | 9/10 | 9/10 | [View Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-08-ai-governance-gap-review.md) |
-| [Agentic AI Shift: 192% ROI Claims](/posts/2025/11/07/agentic-ai-shift-192-percent-roi/) | 2025-11-07 | 26/30 | 8/10 | 9/10 | 9/10 | [View Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-07-agentic-ai-shift-review.md) |
-| [AI Scaling Crisis: 88% Failure Rate](/posts/2025/11/07/ai-scaling-crisis-88-percent-failure/) | 2025-11-07 | 25/30 | 8/10 | 8/10 | 9/10 | [View Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-07-ai-scaling-crisis-review.md) |
-| [AI Writing Patterns: The Em Dash Epidemic](/posts/2025/11/07/ai-writing-patterns-em-dash/) | 2025-11-07 | 24/30 | 7/10 | 8/10 | 9/10 | [View Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-07-ai-writing-patterns-review.md) |
+<div class="article-table">
+
+| Article | Date | Overall | Business | Quality | Substance | Review |
+|---------|------|---------|----------|---------|-----------|--------|
+| [The $375B Infrastructure Gamble]({{ '/posts/2025/11/07/infrastructure-gamble-375-billion/' | relative_url }}) | 2025-11-07 | **27/30** | 8/10 | 9/10 | 7/10 | [Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-07-infrastructure-gamble-375-billion-review.md) |
+| [AI Governance Gap (Australia)]({{ '/posts/2025/11/08/ai-governance-gap-australian-companies/' | relative_url }}) | 2025-11-08 | **27/30** | 9/10 | 9/10 | 9/10 | [Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-08-ai-governance-gap-review.md) |
+| [Agentic AI: 192% ROI Claims]({{ '/posts/2025/11/07/agentic-ai-shift-192-percent-roi/' | relative_url }}) | 2025-11-07 | **26/30** | 8/10 | 9/10 | 9/10 | [Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-07-agentic-ai-shift-review.md) |
+| [AI Scaling Crisis: 88% Failure]({{ '/posts/2025/11/07/ai-scaling-crisis-88-percent-failure/' | relative_url }}) | 2025-11-07 | **25/30** | 8/10 | 8/10 | 9/10 | [Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-07-ai-scaling-crisis-review.md) |
+| [AI Writing: Em Dash Epidemic]({{ '/posts/2025/11/07/ai-writing-patterns-em-dash/' | relative_url }}) | 2025-11-07 | **24/30** | 7/10 | 8/10 | 9/10 | [Review](https://github.com/teejayen/ai-slop/blob/main/research/2025-11-07-ai-writing-patterns-review.md) |
+
+</div>
+
+---
 
 ## Scoring Framework
+
+<div class="scoring-section">
 
 ### Business Focus Agent (/10)
 
@@ -84,6 +98,10 @@ Evaluates:
 - 3-4: Mostly generic with limited specifics
 - 0-2: Pure "slop" - vague, generic, no substance
 
+</div>
+
+---
+
 ## Production Threshold
 
 **24/30 minimum required for publication**
@@ -131,4 +149,8 @@ This is an open research project. If you have questions about the methodology or
 
 ---
 
-*Last updated: November 2025*
+<div class="footer-note">
+<em>Last updated: November 2025</em>
+</div>
+
+</div>

@@ -4,13 +4,21 @@ title: About This Project
 permalink: /about/
 ---
 
+<div class="page-content">
+
 # About This Project
+
+<div class="intro-box">
 
 ## What This Is
 
 This is a **research project studying AI-generated business content**. Every article on this site is created by Claude (Anthropic) using a multi-agent workflow, then transparently labelled and documented for analysis.
 
 The goal: understand what differentiates substantive business analysis from generic "AI slop."
+
+</div>
+
+---
 
 ## Why This Exists
 
@@ -34,7 +42,7 @@ The question emerged: if AI-generated content follows predictable patterns, can 
 Articles are generated using Claude Code's orchestrator and review agent architecture:
 
 1. **Research Phase**: Web search for current AI business trends, avoiding topics already covered
-2. **Topic Selection**: Automatic selection based on Morgan Ashby's persona criteria (see [About the Author](/author/))
+2. **Topic Selection**: Automatic selection based on Morgan Ashby's persona criteria (see [About the Author]({{ '/author/' | relative_url }}))
 3. **Deep Research**: Focused queries gathering business implications, data, examples, critical perspectives
 4. **Draft Generation**: Comprehensive 800-1200 word business-focused article
 5. **Parallel Review**: Three specialist agents evaluate simultaneously:
@@ -48,7 +56,7 @@ Articles are generated using Claude Code's orchestrator and review agent archite
 
 - Articles scoring **24+/30** are production-ready
 - Below 24/30 requires iteration and fixes
-- All scores published in [Research Documentation](/research/)
+- All scores published in [Research Documentation]({{ '/research/' | relative_url }})
 
 ## Transparency Commitments
 
@@ -105,4 +113,8 @@ Current research goals (November 2025):
 
 ---
 
-*Last updated: November 2025*
+<div class="footer-note">
+<em>Last updated: November 2025</em>
+</div>
+
+</div>

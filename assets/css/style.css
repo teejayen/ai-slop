@@ -397,14 +397,16 @@ body {
 }
 
 /* Links */
-.post-content a {
+.post-content a,
+.page-content a {
     color: var(--teal);
     text-decoration: none;
     border-bottom: 2px solid rgba(0, 184, 148, 0.3);
     transition: all 0.2s ease;
 }
 
-.post-content a:hover {
+.post-content a:hover,
+.page-content a:hover {
     color: var(--teal-dark);
     border-bottom-color: var(--teal);
 }
@@ -423,6 +425,166 @@ body {
 .research-notice strong {
     color: var(--charcoal);
     font-weight: 600;
+}
+
+/* About Pages Styling */
+.page-content {
+    max-width: 100%;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.page-content h1 {
+    font-size: 2.5rem;
+    color: var(--charcoal);
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -1px;
+    border-bottom: 3px solid var(--teal);
+    padding-bottom: 1rem;
+}
+
+.page-content h2 {
+    font-size: 1.75rem;
+    color: var(--charcoal);
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.page-content h3 {
+    font-size: 1.25rem;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.page-content p {
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    color: var(--charcoal);
+}
+
+.page-content ul,
+.page-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    line-height: 1.7;
+}
+
+.page-content li {
+    margin-bottom: 0.5rem;
+}
+
+.page-content hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 3rem 0;
+}
+
+.intro-box {
+    background: rgba(0, 184, 148, 0.05);
+    border-left: 4px solid var(--teal);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.intro-box h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--charcoal);
+}
+
+.intro-box p {
+    margin-bottom: 1rem;
+}
+
+.intro-box p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-note {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e5e5;
+    color: var(--warm-grey);
+    font-size: 0.9rem;
+}
+
+.footer-note p {
+    margin-bottom: 0.5rem;
+}
+
+/* Article Table Styling */
+.article-table {
+    margin: 2rem 0;
+    overflow-x: auto;
+}
+
+.article-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.article-table th {
+    background: var(--teal);
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.article-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 0.9rem;
+}
+
+.article-table tr:last-child td {
+    border-bottom: none;
+}
+
+.article-table tr:hover {
+    background: rgba(0, 184, 148, 0.03);
+}
+
+.article-table a {
+    border-bottom: 1px solid rgba(0, 184, 148, 0.3);
+}
+
+/* Scoring Section */
+.scoring-section {
+    background: var(--off-white);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.scoring-section h3 {
+    color: var(--teal-dark);
+    margin-top: 2rem;
+}
+
+.scoring-section h3:first-child {
+    margin-top: 0;
+}
+
+.scoring-section p {
+    margin-bottom: 0.75rem;
+}
+
+.scoring-section ul {
+    margin-bottom: 1.5rem;
 }
 
 /* Responsive Design */
@@ -494,5 +656,39 @@ body {
     .post-content h3 {
         font-size: 1.125rem;
         margin-top: 1.5rem;
+    }
+
+    .page-content {
+        padding: 1.5rem;
+    }
+
+    .page-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .page-content h2 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .page-content h3 {
+        font-size: 1.125rem;
+    }
+
+    .intro-box {
+        padding: 1.5rem;
+    }
+
+    .article-table {
+        font-size: 0.8rem;
+    }
+
+    .article-table th,
+    .article-table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .scoring-section {
+        padding: 1.5rem;
     }
 }
