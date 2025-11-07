@@ -138,6 +138,12 @@ generation_method: "multi-agent-workflow"
    - Article: `_posts/YYYY-MM-DD-topic-slug.md`
    - Review summary: `research/YYYY-MM-DD-topic-slug-review.md`
 
+5. **Update research-docs.md:**
+   - Add new article to the Published Articles table in `research-docs.md`
+   - Table is sorted by overall score (highest first), then by date
+   - Use this format: `| [Short Title]({{ '/posts/YYYY/MM/DD/slug/' | relative_url }}) | YYYY-MM-DD | **XX/30** | X/10 | X/10 | X/10 | [Review](https://github.com/teejayen/ai-slop/blob/main/research/YYYY-MM-DD-slug-review.md) |`
+   - Ensure the Jekyll permalink uses the correct URL structure with date components
+
 ### Phase 7: OUTPUT & PRESENTATION
 
 Present to user:

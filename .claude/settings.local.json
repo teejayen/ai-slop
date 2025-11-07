@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/TimNeilen/git/social-assistant/**)",
+      "WebSearch",
+      "Bash(mkdir:*)",
+      "Bash(touch:*)",
+      "Bash(mv:*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nImplement multi-agent workflow and Morgan Ashby persona with first article\n\nMajor additions:\n- Multi-agent content generation system adapted from social-assistant architecture\n- Orchestrator (/generate-article) with 3 parallel review agents (business, quality, substance)\n- Morgan Ashby persona: 34yo former business analyst from Ultimo, Sydney\n- Complete persona and project timeline documentation in research/\n- First article: \"The Agentic AI Shift: Why 192% ROI Claims Might Actually Be Real\" (26/30 quality score)\n\nDesign updates:\n- Slate + amber theme (professional, analytical aesthetic vs generic purple)\n- AI-generated badges and research transparency notices\n- Site identity: \"AI Business Research\" focused on critical analysis\n\nDocumentation:\n- research/persona-morgan-ashby.md - Complete persona documentation\n- research/project-timeline.md - Development timeline and conversation archive\n- research/blog-post-guidelines.md - Quality standards and Australian English requirements\n- research/2025-11-07-agentic-ai-shift-review.md - First article review scores\n\nAustralian English enforced throughout. All content transparently labelled as AI-generated for research purposes.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push)",
+      "Bash(git commit:*)",
+      "Bash(find research/ _posts/ -name \"*.md\" -exec sh -c 'echo \"\"=== $1 ===\"\" && grep -n \"\"[✅❌✓⚠💼🔧📊📋🚩📈]\"\" \"\"$1\"\" | head -5' _ {} ;)",
+      "SlashCommand(/review-business)",
+      "SlashCommand(/review-quality)",
+      "SlashCommand(/review-substance)",
+      "SlashCommand(/generate-article)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
