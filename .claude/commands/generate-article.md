@@ -4,7 +4,7 @@ You are an AI business content orchestrator for the ai-slop research project. Th
 
 ## Task: Create Production-Ready Blog Article
 
-**This is a CONTENT FACTORY workflow designed for minimal iteration.**
+**This is a CONTENT FACTORY workflow designed for FULL AUTOMATION.**
 
 ### Phase 1: RESEARCH & TOPIC SELECTION
 
@@ -61,33 +61,33 @@ Generate comprehensive blog article (800-1200 words) with BUSINESS FOCUS:
   - Strategic considerations
 
 **Style Requirements:**
--  **Business-focused** - practical implications for business leaders
--  **Substantive** - specific examples, data, frameworks (not platitudes)
--  **Australian English** - optimise, realise, organise, centre, defence
--  **Professional but accessible** - avoid excessive jargon
--  **Critical perspective** - question hype, acknowledge nuance
--  **Evidence-based** - cite sources, use hyperlinks
--  **No emojis** unless explicitly requested
+- ✓ **Business-focused** - practical implications for business leaders
+- ✓ **Substantive** - specific examples, data, frameworks (not platitudes)
+- ✓ **Australian English** - optimise, realise, organise, centre, defence
+- ✓ **Professional but accessible** - avoid excessive jargon
+- ✓ **Critical perspective** - question hype, acknowledge nuance
+- ✓ **Evidence-based** - cite sources, use hyperlinks
+- ✓ **No emojis** unless explicitly requested
 
 **Banned Phrases:**
-L "Embark on a journey"
-L "Unlock potential" / "Unlock value"
-L "Game-changing" (unless critically examining)
-L "Revolutionary" (unless critically examining)
-L "Leverage synergy"
-L "Thought leader" positioning
-L Generic listicles ("Top 10...")
+- ✗ "Embark on a journey"
+- ✗ "Unlock potential" / "Unlock value"
+- ✗ "Game-changing" (unless critically examining)
+- ✗ "Revolutionary" (unless critically examining)
+- ✗ "Leverage synergy"
+- ✗ "Thought leader" positioning
+- ✗ Generic listicles ("Top 10...")
 
 ### Phase 4: MULTI-AGENT REVIEW (AUTOMATIC - DO NOT SKIP)
 
-**CRITICAL: After drafting, AUTOMATICALLY launch 3 review agents in PARALLEL using Task tool:**
+**CRITICAL: After drafting, AUTOMATICALLY launch 3 review agents in PARALLEL using SlashCommand tool:**
 
 ```
-IMPORTANT: Use Task tool to launch these agents simultaneously:
+IMPORTANT: Use SlashCommand tool to launch these agents simultaneously:
 
-Task 1: /review-business - Validates business focus and strategic value
-Task 2: /review-quality - Australian English, readability, formatting
-Task 3: /review-substance - Detects "slop" vs substantive content
+SlashCommand: /review-business - Validates business focus and strategic value
+SlashCommand: /review-quality - Australian English, readability, formatting
+SlashCommand: /review-substance - Detects "slop" vs substantive content
 
 DO NOT present draft to user until ALL reviews complete.
 Wait for all agents to return scores and feedback.
@@ -98,7 +98,7 @@ Wait for all agents to return scores and feedback.
 1. Collect all review scores and feedback from the 3 agents
 2. Calculate overall quality score (/30)
 3. Apply critical fixes identified by review agents:
-   - Fix any American English � Australian English
+   - Fix any American English → Australian English
    - Remove banned phrases
    - Enhance business angle if weak
    - Add substance where generic
@@ -109,7 +109,7 @@ Wait for all agents to return scores and feedback.
 **CRITICAL: Save to _posts/ in proper Jekyll format**
 
 1. **Generate filename:** `_posts/YYYY-MM-DD-topic-slug.md`
-   - Use today's date (2025-11-07)
+   - Use today's date
    - Create URL-friendly slug (lowercase, hyphens)
    - Keep concise but descriptive
 
@@ -118,7 +118,7 @@ Wait for all agents to return scores and feedback.
 ---
 layout: post
 title: "Article Headline Here"
-date: 2025-11-07 HH:MM:SS +1100
+date: YYYY-MM-DD HH:MM:SS +1100
 author: AI Research Bot
 categories: [business, ai]
 tags: [ai-generated, research, business-strategy]
@@ -144,12 +144,50 @@ generation_method: "multi-agent-workflow"
    - Use this format: `| [Short Title]({{ '/posts/YYYY/MM/DD/slug/' | relative_url }}) | YYYY-MM-DD | **XX/30** | X/10 | X/10 | X/10 | [Review](https://github.com/teejayen/ai-slop/blob/main/research/YYYY-MM-DD-slug-review.md) |`
    - Ensure the Jekyll permalink uses the correct URL structure with date components
 
-### Phase 7: OUTPUT & PRESENTATION
+### Phase 7: AUTO-COMMIT & PUSH (AUTOMATIC)
+
+**CRITICAL: Automatically commit and push to GitHub - full content factory automation**
+
+1. **Stage files:**
+```bash
+git add _posts/YYYY-MM-DD-topic-slug.md research/YYYY-MM-DD-topic-slug-review.md research-docs.md
+```
+
+2. **Commit with detailed message:**
+```bash
+git commit -m "$(cat <<'EOF'
+Add new article: [Short Title]
+
+[2-3 sentence summary of article focus and key insights]
+
+Quality scores: Business X/10, Quality X/10, Substance X/10 (XX/30 overall)
+
+Files:
+- _posts/YYYY-MM-DD-topic-slug.md (word count, source count)
+- research/YYYY-MM-DD-topic-slug-review.md
+- research-docs.md (added to published articles table)
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+EOF
+)"
+```
+
+3. **Push to remote:**
+```bash
+git push
+```
+
+4. **Confirm push successful** and include commit hash in output
+
+### Phase 8: OUTPUT & PRESENTATION
 
 Present to user:
 ```
- Article generated and saved
+✅ Article generated, reviewed, and pushed to GitHub
 
+**Commit:** [hash] - "Add new article: [Title]"
 **Article:** [Headline]
 **File:** _posts/YYYY-MM-DD-topic-slug.md
 
@@ -164,16 +202,18 @@ Present to user:
 **Review Summary:** research/YYYY-MM-DD-topic-slug-review.md
 
 [Brief summary of article and key business insights]
+
+**Live on GitHub Pages in ~1-2 minutes**
 ```
 
-### Phase 8: ITERATION (Only If Needed)
+### Phase 9: ITERATION (Only If Needed)
 
 **Only iterate if:**
 - Overall score < 24/30
 - Critical violations (factual errors, American English, banned phrases)
 - User requests specific changes
 
-Otherwise, content is PRODUCTION-READY.
+Otherwise, content is PRODUCTION-READY and PUBLISHED.
 
 ---
 
@@ -201,14 +241,14 @@ Every article must answer:
 
 ### Substance Over Slop
 Avoid AI content patterns:
-- L Generic platitudes ("AI is transforming business")
-- L Vague buzzwords without explanation
-- L Listicles without depth
-- L Hype without critical analysis
--  Specific examples with data
--  Nuanced analysis of trade-offs
--  Real-world case studies
--  Critical perspective on limitations
+- ✗ Generic platitudes ("AI is transforming business")
+- ✗ Vague buzzwords without explanation
+- ✗ Listicles without depth
+- ✗ Hype without critical analysis
+- ✓ Specific examples with data
+- ✓ Nuanced analysis of trade-offs
+- ✓ Real-world case studies
+- ✓ Critical perspective on limitations
 
 ---
 
