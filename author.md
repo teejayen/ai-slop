@@ -4,11 +4,11 @@ title: About the Author
 permalink: /author/
 ---
 
-<div class="page-content">
+<div class="page-content" markdown="1">
 
 # About the Author
 
-<div class="intro-box">
+<div class="intro-box" markdown="1">
 
 ## Morgan Ashby
 

@@ -4,11 +4,11 @@ title: Research Documentation
 permalink: /research/
 ---
 
-<div class="page-content">
+<div class="page-content" markdown="1">
 
 # Research Documentation
 
-<div class="intro-box">
+<div class="intro-box" markdown="1">
 This page provides access to all research documentation, review scores, and methodology notes for the AI Business Research project.
 </div>
 
@@ -32,7 +32,7 @@ Each article receives three parallel reviews (Business Focus /10, Quality Standa
 
 ### Published Articles
 
-<div class="article-table">
+<div class="article-table" markdown="1">
 
 | Article | Date | Overall | Business | Quality | Substance | Review |
 |---------|------|---------|----------|---------|-----------|--------|
@@ -48,7 +48,7 @@ Each article receives three parallel reviews (Business Focus /10, Quality Standa
 
 ## Scoring Framework
 
-<div class="scoring-section">
+<div class="scoring-section" markdown="1">
 
 ### Business Focus Agent (/10)
 

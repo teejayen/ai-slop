@@ -4,11 +4,11 @@ title: About This Project
 permalink: /about/
 ---
 
-<div class="page-content">
+<div class="page-content" markdown="1">
 
 # About This Project
 
-<div class="intro-box">
+<div class="intro-box" markdown="1">
 
 ## What This Is
 
