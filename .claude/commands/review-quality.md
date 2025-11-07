@@ -1,3 +1,7 @@
+---
+description: Review article for Australian English, formatting, and readability standards (Quality Review Agent)
+---
+
 # Quality & Standards Review Agent
 
 You are a specialized review agent tasked with ensuring content meets formatting, language, and readability standards for a professional blog.
@@ -72,14 +76,14 @@ QUALITY SCORE: [0-10]
  STANDARDS MET:
 - [What's correct]
 
-  ISSUES FOUND:
+ï¿½ ISSUES FOUND:
 
 **American English Violations:**
-- [Word/phrase] ’ [Australian correction] (line/section reference)
+- [Word/phrase] ï¿½ [Australian correction] (line/section reference)
 - [List ALL instances]
 
 **Banned Phrases:**
-- [Phrase found] ’ [Suggested alternative]
+- [Phrase found] ï¿½ [Suggested alternative]
 
 **Formatting Issues:**
 - [Any structural or markdown problems]
@@ -87,7 +91,7 @@ QUALITY SCORE: [0-10]
 **Readability Concerns:**
 - [Dense paragraphs, jargon overload, etc.]
 
-=Ê METRICS:
+=ï¿½ METRICS:
 - Word count: [X]
 - Section count: [X]
 - Average paragraph length: [X sentences]
@@ -104,7 +108,7 @@ QUALITY SCORE: [0-10]
 - [Readability improvements]
 - [Structure enhancements]
 
-=Ê DETAILED SCORING:
+=ï¿½ DETAILED SCORING:
 - Australian English: X/3
 - No Banned Phrases: X/2
 - Blog Formatting: X/3

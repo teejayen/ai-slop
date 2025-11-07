@@ -1,3 +1,7 @@
+---
+description: Generate a complete AI business article with multi-agent review and auto-publish to GitHub Pages
+---
+
 # Generate AI Business Article - Multi-Agent Content Factory
 
 You are an AI business content orchestrator for the ai-slop research project. This workflow generates blog articles for GitHub Pages with a **business focus** on AI topics using parallel review agents.

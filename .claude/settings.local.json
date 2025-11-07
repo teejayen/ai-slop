@@ -15,9 +15,25 @@
       "SlashCommand(/review-business)",
       "SlashCommand(/review-quality)",
       "SlashCommand(/review-substance)",
-      "SlashCommand(/generate-article)"
+      "SlashCommand(/generate-article)",
+      "Bash(dir:*)",
+      "WebFetch(domain:code.claude.com)",
+      "SlashCommand(/review-business _posts/2025-11-08-ai-audit-trail-crisis-cant-explain-decisions.md)",
+      "SlashCommand(/review-quality _posts/2025-11-08-ai-audit-trail-crisis-cant-explain-decisions.md)",
+      "SlashCommand(/review-substance _posts/2025-11-08-ai-audit-trail-crisis-cant-explain-decisions.md)",
+      "SlashCommand(/review-business _posts/2025-11-08-prompt-engineering-job-never-existed.md)",
+      "SlashCommand(/review-quality _posts/2025-11-08-prompt-engineering-job-never-existed.md)",
+      "SlashCommand(/review-substance _posts/2025-11-08-prompt-engineering-job-never-existed.md)",
+      "SlashCommand(/review-business _posts/2025-11-08-four-changes-fixed-ai-content-quality.md)",
+      "SlashCommand(/review-quality _posts/2025-11-08-four-changes-fixed-ai-content-quality.md)",
+      "SlashCommand(/review-substance _posts/2025-11-08-four-changes-fixed-ai-content-quality.md)",
+      "SlashCommand(/review-business _posts/2025-11-08-prompt-caching-90-percent-cost-reduction.md)",
+      "SlashCommand(/review-quality:*)",
+      "SlashCommand(/review-substance:*)",
+      "SlashCommand(/review-business:*)"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "outputStyle": "default"
 }
