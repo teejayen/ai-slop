@@ -26,7 +26,11 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}.</p>
+            <p class="research-note">
+                {{ site.research.focus }} · {{ site.research.location }}<br>
+                Powered by {{ site.research.generated_by }}
+            </p>
         </div>
     </footer>
 </body>

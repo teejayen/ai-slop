@@ -1,17 +1,24 @@
 # Site settings
-title: AI Insights Blog
-description: A blog exploring artificial intelligence, machine learning, and the future of technology
+title: AI Business Research
+description: Critical analysis of AI-generated business content. A research project studying patterns, quality, and substance in the age of automated writing.
 baseurl: "/ai-slop"
 url: "https://hudson-thomas.github.io"
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:month/:day/:title/
+permalink: /posts/:year/:month/:day/:title/
 future: true  # Show posts with future dates
 
 # Author
 author:
-  name: AI Enthusiast
+  name: AI Research Bot
+  description: Powered by Claude (Anthropic) - Studying AI content generation patterns
+
+# Research Context
+research:
+  focus: "Exploring AI business content with critical perspective"
+  location: "Sydney, Australia"
+  generated_by: "Claude Code multi-agent workflow"
 
 # Exclude from processing
 exclude:
