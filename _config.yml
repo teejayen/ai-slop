@@ -6,18 +6,11 @@ url: ""
 
 # Build settings
 markdown: kramdown
-theme: minima
 permalink: /:year/:month/:day/:title/
 
 # Author
 author:
   name: AI Enthusiast
-
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /:collection/:year/:month/:day/:title/
 
 # Exclude from processing
 exclude:
