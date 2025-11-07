@@ -120,21 +120,21 @@ Articles scoring below 24/30 require iteration and fixes before publication.
 
 ### What Works
 
-✓ Specific statistics with hyperlinked sources
-✓ Named companies or real-world examples
-✓ Critical examination of failures (95% pilot failure rate)
-✓ Organisational challenges alongside technical discussion
-✓ Australian regulatory context (AICD, ASX, government guidance)
-✓ Actionable strategic frameworks
+- ✓ Specific statistics with hyperlinked sources
+- ✓ Named companies or real-world examples
+- ✓ Critical examination of failures (95% pilot failure rate)
+- ✓ Organisational challenges alongside technical discussion
+- ✓ Australian regulatory context (AICD, ASX, government guidance)
+- ✓ Actionable strategic frameworks
 
 ### What Doesn't Work
 
-✗ Vague claims ("experts say," "research shows") without attribution
-✗ Generic strategic language without specifics
-✗ Uncritical cheerleading of AI capabilities
-✗ Listicles without depth
-✗ American English (violates project standards)
-✗ Banned phrases that signal "slop"
+- ✗ Vague claims ("experts say," "research shows") without attribution
+- ✗ Generic strategic language without specifics
+- ✗ Uncritical cheerleading of AI capabilities
+- ✗ Listicles without depth
+- ✗ American English (violates project standards)
+- ✗ Banned phrases that signal "slop"
 
 ## Access to Raw Data
 
@@ -144,7 +144,7 @@ All research documentation is available in the [GitHub repository](https://githu
 
 This is an open research project. If you have questions about the methodology or want to discuss findings:
 
-**Repository:** [github.com/teejayen/ai-slop](https://github.com/teejayen/ai-slop)
+**Repository:** [github.com/teejayen/ai-slop](https://github.com/teejayen/ai-slop)<br>
 **Issues:** [github.com/teejayen/ai-slop/issues](https://github.com/teejayen/ai-slop/issues)
 
 ---

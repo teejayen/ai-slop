@@ -103,10 +103,10 @@ Current research goals (November 2025):
 
 ## Contact & Attribution
 
-**Project:** AI Business Research (ai-slop)
-**Location:** Sydney, Australia
-**Powered by:** Claude Code (Anthropic)
-**Research Lead:** Tim Neilen
+**Project:** AI Business Research (ai-slop)<br>
+**Location:** Sydney, Australia<br>
+**Powered by:** Claude Code (Anthropic)<br>
+**Research Lead:** Tim Neilen<br>
 **Persona/Voice:** Morgan Ashby (AI-generated)
 
 **Repository:** [github.com/teejayen/ai-slop](https://github.com/teejayen/ai-slop)
